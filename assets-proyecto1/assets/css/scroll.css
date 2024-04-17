@@ -1,0 +1,79 @@
+:root{
+    --color-scrollbar : #919193;
+    --color-background-scrollbar : #eee;
+}
+
+
+
+/* SCROLL MOZ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLL CHROME */
+.content__page::-webkit-scrollbar{
+   width: 25px;
+   background:transparent;
+}
+
+/* webkit-scroolbar-thumb es el elemento de la barra que podemos clikar y mover */
+.content__page::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+/* Damos estilos a l barra cuando ahacemos hover sobre el contenido */
+
+.content__page:hover::-webkit-scrollbar-thumb{
+    /* border: 10px solid transparent; */
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secondary);
+}
+.content__page::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Scroll Chrome  barra lateral */
+.layout__aside::-webkit-scrollbar{
+    width: 25px;
+    background: var(--color-secondary);
+ }
+ 
+ /* webkit-scroolbar-thumb es el elemento de la barra que podemos clikar y mover */
+ .layout__aside::-webkit-scrollbar-thumb{
+     border: 10px solid transparent;
+     box-shadow: none;
+     border-radius: 40px;
+ }
+ 
+ /* Damos estilos a l barra cuando ahacemos hover sobre el contenido */
+ 
+ .layout__aside:hover::-webkit-scrollbar-thumb{
+     border: 10px solid transparent;
+     box-shadow: inset 0 0 0 10px white;
+ }
+ 
+ .layout__aside:hover::-webkit-scrollbar-thumb:hover{
+     border: 15px solid transparent;
+     box-shadow: inset 0 0 0 10px var(--color-secondary);
+ }
+ .layout__as::-webkit-scrollbar-track{
+     background-color: transparent;
+     margin-top: 40px;
+     margin-bottom: 40px;
+ }
